@@ -62,7 +62,7 @@ Alex finished all their chores!
 ## Usage
 
 1. Clone this repository.
-2. Open `callbackVersion.js`, `promiseVersion.js`, or `asyncAwaitVersion.js` in your editor.
+2. Open `callbackVersion.js`, `promiseVersion.js`, `asyncAwaitVersion.js` in your editor.
 3. Run the desired file using Node.js:
 
    ```sh
