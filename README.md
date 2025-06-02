@@ -44,7 +44,7 @@ doSummerChores("Alex");
 The `doSummerChores` function starts the sequence using an async function:
 
 ```javascript
-doSummerChores("Alex);
+doSummerChores("Alex");
 ```
 Each version will output each step to the console, simulating the time taken for each chore.
 
