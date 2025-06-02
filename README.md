@@ -1,12 +1,13 @@
-# Summer Chores (Callback Version)
+# Summer Chores
 
-This project demonstrates how to manage asynchronous tasks in JavaScript using callbacks, often referred to as "callback hell." The example simulates a sequence of summer chores, each taking a different amount of time to complete.
+This project demonstrates how to manage asynchronous tasks in JavaScript using both callbacks and promises. The example simulates a sequence of summer chores, each taking a different amount of time to complete.
 
 ## Features
 
-- Simulates a series of summer chores using asynchronous functions and callbacks.
+- Simulates a series of summer chores using asynchronous functions.
+- Two implementations: one using callbacks ("callback hell") and one using Promises (with chaining).
 - Each chore logs progress to the console.
-- Demonstrates how callback nesting can lead to "callback hell."
+- Demonstrates how callback nesting can lead to "callback hell" and how Promises can improve code readability.
 - Each chore has a realistic simulated duration using `setTimeout`.
 
 ## Chores and Their Durations
@@ -21,15 +22,25 @@ This project demonstrates how to manage asynchronous tasks in JavaScript using c
 
 ## How It Works
 
-Each function represents a chore and takes a person's name, a completion flag (for chores after mowing), and a callback function. When a chore is completed, it logs a message and calls the next callback. If a chore is not completed, it logs a message indicating the person fell asleep.
+Each function represents a chore and takes a person's name, a completion flag (for chores after mowing), and a callback function (callback version) or returns a Promise (promise version). When a chore is completed, it logs a message and calls the next callback or resolves the next Promise. If a chore is not completed, it logs a message indicating the person fell asleep.
 
-The `doSummerChores` function starts the sequence:
+### Callback Version
+
+The `doSummerChores` function starts the sequence using callbacks:
 
 ```javascript
 doSummerChores("Alex");
 ```
 
-This will output each step to the console, simulating the time taken for each chore.
+### Promise Version
+
+The `doSummerChores` function starts the sequence using chained Promises:
+
+```javascript
+doSummerChores("Alex");
+```
+
+Both versions will output each step to the console, simulating the time taken for each chore.
 
 ## Example Output
 
@@ -45,11 +56,15 @@ Alex finished all their chores!
 ## Usage
 
 1. Clone this repository.
-2. Open `callbackVersion.js` in your editor.
-3. Run the file using Node.js:
+2. Open `callbackVersion.js` or `promiseVersion.js` in your editor.
+3. Run the desired file using Node.js:
 
    ```sh
    node callbackVersion.js
+   ```
+   or
+   ```sh
+   node promiseVersion.js
    ```
 
 4. Observe the output in your terminal.
