@@ -1,4 +1,4 @@
-# Summer Chores (Callback Version)
+# Summer Chores 
 
 This project demonstrates how to manage asynchronous tasks in JavaScript using callbacks, often referred to as "callback hell." The example simulates a sequence of summer chores, each taking a different amount of time to complete.
 
