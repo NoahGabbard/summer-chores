@@ -22,7 +22,7 @@ This project demonstrates how to manage asynchronous tasks in JavaScript using b
 
 ## How It Works
 
-Each function represents a chore and takes a person's name, a completion flag (for chores after mowing), and a callback function (callback version) or returns a Promise (promise version). When a chore is completed, it logs a message and calls the next callback or resolves the next Promise. If a chore is not completed, it logs a message indicating the person fell asleep.
+Each function represents a chore and takes a person's name, a completion flag (for chores after mowing), and a callback function (callback version) or returns a Promise (promise version). When a chore is completed, it logs a message and calls the next callback or resolves the next Promise. If a chore is not completed, it logs a message indicating the person fell asleep. An included probability function gives each 'person' a 30% chance of falling asleep during their chore, but they can never fall asleep before the mowYard function.
 
 ### Callback Version
 
