@@ -66,16 +66,16 @@ function waterGarden(name, choreCompleted) {
 function doSummerChores(name) {
     mowYard(name)
         .then(() => {
-            return weedEat(name, true);
+            return weedEat(name, isAwake());
         })
         .then(() => {
-            return trimHedges(name, true);
+            return trimHedges(name, isAwake());
         })
         .then(() => {
-            return collectWood(name, true);
+            return collectWood(name, isAwake());
         })
         .then(() => {
-            return waterGarden(name, true);
+            return waterGarden(name, isAwake());
         })
         .then(() => {
             console.log(`${name} finished all their chores!`);

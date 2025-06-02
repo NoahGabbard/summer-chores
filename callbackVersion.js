@@ -65,10 +65,10 @@ function waterGarden(name, choreCompleted, callback) {
 
 function doSummerChores(name) {
     mowYard(name, function() {
-        weedEat(name, true, function() {
-            trimHedges(name, true, function() {
-                collectWood(name, true, function() {
-                    waterGarden(name, true, function() {
+        weedEat(name, isAwake(), function() {
+            trimHedges(name, isAwake(), function() {
+                collectWood(name, isAwake(), function() {
+                    waterGarden(name, isAwake(), function() {
                         console.log(`${name} finished all their chores!`);
                     });
                 });
