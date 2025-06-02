@@ -65,7 +65,7 @@ function waterGarden(name, choreCompleted) {
 
 async function doSummerChores(name) {
     try {
-        await mowYard(name); // Always completes
+        await mowYard(name); 
         await weedEat(name, isAwake());
         await trimHedges(name, isAwake());
         await collectWood(name, isAwake());
@@ -76,5 +76,4 @@ async function doSummerChores(name) {
     }
 }
 
-// Example usage:
 doSummerChores("Alex");
