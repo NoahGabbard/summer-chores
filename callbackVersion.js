@@ -1,3 +1,7 @@
+function isAwake(probabilityAwake = 0.7) {
+    return Math.random() < probabilityAwake;
+}
+
 function mowYard(name, callback) {
     setTimeout(() => {
         console.log(`${name} mowed the yard.`);
